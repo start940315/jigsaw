@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta name="renderer" content="webkit">
+<meta charset="utf8">
+<meta name="author" content="Startan QQ250538650">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+<meta name="format-detection" content="telephone=no">
+<title>拼出维尼熊</title>
+<link href="./static/css/reset.css" rel="stylesheet" />
+<link href="./static/css/main.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="container step1">
+		<img src="./static/img/bg.jpg" alt="bg" class="page bg">
+		<div class="page" id="start">
+			<h1>拼出维尼熊</h1>
+			<button id="start-btn" class="btn large">开始拼图</button>
+		</div>
+		<div class="page" id="mode-select">
+			<h2>选择游戏模式</h2>
+			<div class="mode-btn-wr">
+				<button class="btn large tl" data-mode="1">限时模式</button>
+				<button class="btn small l" data-difficulty="1">低能</button>
+				<button class="btn large lu" data-mode="2">进阶模式</button>
+				<button class="btn small m" data-difficulty="2">中能</button>
+				<button class="btn large tc" data-mode="3">计时模式</button>
+				<button class="btn small h" data-difficulty="3">高能</button>
+			</div>
+		</div>
+		<div class="page" id="game">
+			<div class="frag-wr">
+				<canvas width="300" height="400" id="jigsaw"></canvas>
+				<canvas width="300" height="400" id="moving"></canvas>
+			</div>
+			<div class="game-ctr">
+				<div class="back clearfix"><i></i></div>
+				<div class="game-mode"><span class="m">限时模式</span><span class="d">低能</span></div>
+				<div class="timer clearfix"><i></i><span class="value">2：30</span></div>
+			</div>
+		</div>
+	</div>
+	<div class="pop">
+		<div class="pop-card">
+			<div class="pop-card-wr">
+				<p class="text-wr">恭喜你拼出来了~</p>
+				<div class="btn-wr clearfix">
+					<button class="btn share">找人帮忙</button>
+					<button class="btn replay">还要玩</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="preload"></div>
+	<script src="./static/js/zepto-anim.js"></script>
+	<script src="http://static.api.5miao.com/js/api.js"></script>
+	<script src="./static/js/main.js"></script>
+	<div class="preload">
+		<audio id="audio-oui" src="./static/audio/true.mp3"></audio>
+		<audio id="audio-fail" src="./static/audio/fail.mp3"></audio>
+		<audio id="audio-pass" src="./static/audio/pass.mp3"></audio>
+	</div>
+	<div class="test"></div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 warn package.json ColorBlock@1.0.0 No repository field.
+5 warn package.json ColorBlock@1.0.0 No README data
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ '/Users/tanxing/projects/pintu',
+7 verbose install   [ 'grunt',
+7 verbose install     'grunt-contrib-cssmin',
+7 verbose install     'grunt-contrib-jshint',
+7 verbose install     'grunt-contrib-uglify',
+7 verbose install     'grunt-tinypng',
+7 verbose install     'grunt-ejs' ] ]
+8 info preinstall ColorBlock@1.0.0
+9 verbose readDependencies using package.json deps
+10 verbose already installed skipping grunt-contrib-jshint@^0.1.1 /Users/tanxing/projects/pintu
+11 verbose already installed skipping grunt-contrib-uglify@^0.6.0 /Users/tanxing/projects/pintu
+12 verbose already installed skipping grunt-tinypng@^0.5.3 /Users/tanxing/projects/pintu
+13 verbose cache add [ 'grunt-ejs@^0.1.1', null ]
+14 verbose cache add name=undefined spec="grunt-ejs@^0.1.1" args=["grunt-ejs@^0.1.1",null]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: 'grunt-ejs@^0.1.1',
+15 verbose parsed url   path: 'grunt-ejs@^0.1.1',
+15 verbose parsed url   href: 'grunt-ejs@^0.1.1' }
+16 verbose already installed skipping grunt@^0.4.5 /Users/tanxing/projects/pintu
+17 verbose cache add name="grunt-ejs" spec="^0.1.1" args=["grunt-ejs","^0.1.1"]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: '^0.1.1',
+18 verbose parsed url   path: '^0.1.1',
+18 verbose parsed url   href: '^0.1.1' }
+19 verbose addNamed [ 'grunt-ejs', '^0.1.1' ]
+20 verbose addNamed [ null, '>=0.1.1-0 <0.2.0-0' ]
+21 verbose already installed skipping grunt-contrib-cssmin@^0.10.0 /Users/tanxing/projects/pintu
+22 silly lockFile e19f3c50-grunt-ejs-0-1-1 grunt-ejs@^0.1.1
+23 verbose lock grunt-ejs@^0.1.1 /Users/tanxing/.npm/e19f3c50-grunt-ejs-0-1-1.lock
+24 silly addNameRange { name: 'grunt-ejs',
+24 silly addNameRange   range: '>=0.1.1-0 <0.2.0-0',
+24 silly addNameRange   hasData: false }
+25 verbose request where is /grunt-ejs
+26 verbose request registry https://registry.npmjs.org/
+27 verbose request id 7d9d551c57fec5ea
+28 verbose url raw /grunt-ejs
+29 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-ejs' ]
+30 verbose url resolved https://registry.npmjs.org/grunt-ejs
+31 verbose request where is https://registry.npmjs.org/grunt-ejs
+32 info trying registry request attempt 1 at 17:33:21
+33 verbose etag "6QSK4XH9B6KPZB6FK5II17I1U"
+34 http GET https://registry.npmjs.org/grunt-ejs
+35 http 304 https://registry.npmjs.org/grunt-ejs
+36 silly registry.get cb [ 304,
+36 silly registry.get   { date: 'Wed, 17 Dec 2014 09:33:22 GMT',
+36 silly registry.get     server: 'Apache',
+36 silly registry.get     via: '1.1 varnish',
+36 silly registry.get     'last-modified': 'Wed, 17 Dec 2014 09:33:06 GMT',
+36 silly registry.get     'cache-control': 'max-age=60',
+36 silly registry.get     etag: '"6QSK4XH9B6KPZB6FK5II17I1U"',
+36 silly registry.get     age: '16',
+36 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+36 silly registry.get     'x-cache': 'HIT',
+36 silly registry.get     'x-cache-hits': '1',
+36 silly registry.get     'x-timer': 'S1418808802.553207,VS0,VE0',
+36 silly registry.get     vary: 'Accept',
+36 silly registry.get     'content-length': '0',
+36 silly registry.get     'keep-alive': 'timeout=10, max=50',
+36 silly registry.get     connection: 'Keep-Alive' } ]
+37 verbose etag https://registry.npmjs.org/grunt-ejs from cache
+38 silly addNameRange number 2 { name: 'grunt-ejs', range: '>=0.1.1-0 <0.2.0-0', hasData: true }
+39 silly addNameRange versions [ 'grunt-ejs', [ '0.1.0', '0.2.0' ] ]
+40 silly lockFile e19f3c50-grunt-ejs-0-1-1 grunt-ejs@^0.1.1
+41 silly lockFile e19f3c50-grunt-ejs-0-1-1 grunt-ejs@^0.1.1
+42 error notarget No compatible version found: grunt-ejs@'>=0.1.1-0 <0.2.0-0'
+42 error notarget Valid install targets:
+42 error notarget ["0.1.0","0.2.0"]
+42 error notarget
+42 error notarget This is most likely not a problem with npm itself.
+42 error notarget In most cases you or one of your dependencies are requesting
+42 error notarget a package version that doesn't exist.
+43 error System Darwin 14.0.0
+44 error command "node" "/usr/local/bin/npm" "install"
+45 error cwd /Users/tanxing/projects/pintu
+46 error node -v v0.10.32
+47 error npm -v 1.4.28
+48 error code ETARGET
+49 verbose exit [ 1, true ]
