@@ -1,0 +1,10 @@
+
+#只提交未压缩和未打包的源代码，压缩了的代码不提交，还有ejs生成的代码也不提交，node_modules也不提交，下载之后还需要通过npm install来安装grunt和需要的包
+
+static/
+
+(!\.)*.html
+
+node_modules/
+
+*.zip
